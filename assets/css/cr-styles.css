@@ -1,0 +1,126 @@
+*, *:before, *:after {}
+
+.twentytwenty-container img {
+	width: 100%;
+}
+.pswp {
+	z-index: 999999 !important;
+}
+.slider-link {
+	cursor: pointer;
+}
+.cr-slider-wrap .slider-nav .slick-track {
+	margin: 0;
+}
+.slick-next {
+	right: 20px !important;
+}
+.slick-prev {
+	left: 20px !important;
+}
+.cr-slider-wrap .slick-dots {
+	position:relative;
+	bottom: 0;
+	margin: 10px 0 17px;
+}
+.slick-prev, .slick-next {
+	font-size: 40px !important;
+	z-index: 1;
+	width: 1em !important;
+	height: 1em !important;
+	top: calc(50% - 0.5em) !important;
+}
+.slick-prev:before, .slick-next:before {
+    color: rgba(0,0,0,0.5) !important;
+    font-size: inherit !important;
+}
+
+.cr-slider-wrap .slick-slider {
+	visibility: visible;
+}
+.cr-slider-wrap .slick-slider.slider-for {
+	margin-bottom: 0;
+}
+.slider-nav .slick-slide img, .slider-for .slick-slide img {
+	margin: 0 auto;
+	width: 100%;
+}
+.cr-col {
+	margin-bottom: 4%;	
+}
+.cr-col:last-child {
+	margin-bottom: 0;
+}
+.MD.cri .cr-col {
+	float: left;
+	margin-right: 4%;
+	margin-bottom: 0;
+}
+.MD.cri .cr-col:not(.cr-col-12):last-child {
+	margin-right: 0;
+}
+.MD.cri .cr-col-1 { width: 4.66666666667%; }
+.MD.cri .cr-col-2 { width: 13.3333333333%; }
+.MD.cri .cr-col-3 { width: 22%; }
+.MD.cri .cr-col-4 { width: 30.6666666667%; }
+.MD.cri .cr-col-5 { width: 39.3333333333%; }
+.MD.cri .cr-col-6 { width: 48%; }
+.MD.cri .cr-col-7 { width: 56.6666666667%; }
+.MD.cri .cr-col-8 { width: 65.3333333333%; }
+.MD.cri .cr-col-9 { width: 74.0%; }
+.MD.cri .cr-col-10 { width: 82.6666666667%; }
+.MD.cri .cr-col-11 { width: 91.3333333333%; }
+.MD.cri .cr-col-12 { width: 100%; margin-left: 0; }
+
+.clearfix:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0;
+}
+
+
+.cri i.fa {
+	font-family: FontAwesome; /* fix for legacy FA */
+}
+.cr-all .cri, .cr-single-item .cri {
+	width: 100%;
+}
+.cr-all .cri {
+	margin-bottom: 20px;
+}
+
+.navigation {
+    margin: 20px 0 40px;
+    text-align: center;
+}
+.cr-checkbox-wrap {
+    margin-right: 5px;
+    display: inline-block;
+}
+.cr-checkbox-wrap:after {
+    content: ', ';
+}
+.cr-checkbox-wrap:last-child:after {
+    display: none;
+}
+.cr-single {
+	margin-bottom: 20px;
+}
+.cr-more {
+	visibility: hidden;
+	display: none;
+	margin-left: 10px;
+}
+*[class*="cr-lines-"] {
+	overflow: hidden;
+	position: relative;
+}
+.cr-nowrap {
+	text-align: right;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}

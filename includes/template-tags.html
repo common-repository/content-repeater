@@ -1,0 +1,224 @@
+<?php ?>
+<div class="cr-template-tags-wrap">
+	<div class="cr-template-tags">
+		<div class="cr-buttons-wrap">
+			<button class="button" value="post_title" data-target="post_title">Post Title</button>
+			<button class="button" value="post_content">Post Content</button>
+			<button class="button" value="post_url">Post URL</button>
+			<button class="button" value="post_id">Post ID</button>
+			<button class="button" value="post_image" data-target="post_image">Featured image</button>
+			<button class="button" value="site_url">Site URL</button>
+			<button class="button" value="cr_url">Plugin URL</button>
+			<br>
+			<button class="button" value="My Text::text" data-target="text">Text (single line)</button>
+			<button class="button" value="My Editor::editor" data-target="editor">Textarea</button>
+			<button class="button" value="My Image::images" data-target="images">Images / Gallery</button>
+			<button class="button" value="My Color::color" data-target="color">Color</button>
+			<button class="button" value="My Date::date" data-target="date">Date</button>
+			<button class="button" value="My Icon::icon" data-target="icon">Icon</button>
+			<button class="button" value="My Dropdown::dropdown" data-target="dropdown">Dropdown</button>
+			<button class="button" value="My Checkboxes::checkboxes" data-target="checkboxes">Checkboxes</button>
+			<br>
+			<button class="button" value="" data-target="conditional">Conditional tags</button>
+		</div>
+		<div class="cr-inserts-wrap">
+			<!-- text -->
+			<div class="cr-insert" data-target="post_title">
+				<div class="cr-insert-inner">
+					<label>Prevent wrapping:</label>
+					<input type="checkbox" class="cr-nowrap">
+				</div>
+			</div>
+			<!-- post_image -->
+			<div class="cr-insert" data-target="post_image">
+				<div class="cr-insert-inner">
+					<label>Size:</label>
+					<select class="size">
+						<option value="none">full</option>
+						<option value="thumbnail">thumbnail</option>
+						<option value="medium">medium</option>
+						<option value="large">large</option>
+					</select>
+				</div>
+				<div class="cr-insert-inner">
+					<label>Output:</label>
+					<select class="output">
+						<option value="none">image HTML tag</option>
+						<option value="url">image URL</option>
+						<option value="id">image ID</option>
+					</select>
+				</div>
+				<div class="cr-insert-inner numbers-only">
+					<label>Default value (image ID):</label>
+					<input type="text" class="cr-default">
+				</div>
+			</div>
+			<!-- images -->
+			<div class="cr-insert" data-target="images">
+				<div class="cr-insert-inner">
+					<label>Name:</label>
+					<input type="text" class="cr-name">
+				</div>
+				<div class="cr-insert-inner">
+					<label>Size:</label>
+					<select class="size">
+						<option value="none">full</option>
+						<option value="thumbnail">thumbnail</option>
+						<option value="medium">medium</option>
+						<option value="large">large</option>
+					</select>
+				</div>
+				<div class="cr-insert-inner">
+					<label>Output:</label>
+					<select class="output">
+						<option value="none">image HTML tag</option>
+						<option value="url">image URL</option>
+						<option value="id">image ID</option>
+						<option value="slider">Slider</option>
+					</select>
+				</div>
+				<div class="cr-insert-inner cr-slider-setting" style="display:none">
+					<label>No thumbs: <input type="checkbox" class="cr-nothumb" title="Disable thumbnails navigation"></label>
+				</div>
+				<div class="cr-insert-inner cr-slider-setting" style="display:none">
+					<label>No link: <input type="checkbox" class="cr-nolink" title="Disable click action on slides"></label>
+				</div>
+				<div class="cr-insert-inner cr-slider-setting" style="display:none">
+					<label>Full height: <input type="checkbox" class="cr-fullheight" title="Disable autoheight on slide change"></label>
+				</div>
+				<div class="cr-insert-inner numbers-only">
+					<label>Default value (image ID):</label>
+					<input type="text" class="cr-default">
+				</div>
+			</div>
+			<!-- text -->
+			<div class="cr-insert" data-target="text">
+				<div class="cr-insert-inner">
+					<label>Name:</label>
+					<input type="text" class="cr-name">
+				</div>
+				<div class="cr-insert-inner">
+					<label>Default value:</label>
+					<input type="text" class="cr-default">
+				</div>
+				<div class="cr-insert-inner">
+					<label>Prevent wrapping:</label>
+					<input type="checkbox" class="cr-nowrap">
+				</div>
+			</div>
+			<!-- dropdown -->
+			<div class="cr-insert" data-target="dropdown">
+				<div class="cr-insert-inner">
+					<label>Name:</label>
+					<input type="text" class="cr-name">
+				</div>
+				<div class="cr-insert-inner">
+					<label>Choices (one per line):</label>
+					<textarea class="cr-choices"></textarea>
+				</div>
+				<div class="cr-insert-inner">
+					<label>Default value:</label>
+					<input type="text" class="cr-default">
+				</div>
+			</div>
+			<!-- checkboxes -->
+			<div class="cr-insert" data-target="checkboxes">
+				<div class="cr-insert-inner">
+					<label>Name:</label>
+					<input type="text" class="cr-name">
+				</div>
+				<div class="cr-insert-inner">
+					<label>Choices (one per line):</label>
+					<textarea class="cr-choices"></textarea>
+				</div>
+			</div>
+			<!-- color -->
+			<div class="cr-insert" data-target="color">
+				<div class="cr-insert-inner">
+					<label>Name:</label>
+					<input type="text" class="cr-name">
+				</div>
+				<div class="cr-insert-inner">
+					<label>Default value:</label>
+					<input type="text" class="cr-default">
+				</div>
+			</div>
+			<!-- date -->
+			<div class="cr-insert" data-target="date">
+				<div class="cr-insert-inner">
+					<label>Name:</label>
+					<input type="text" class="cr-name">
+				</div>
+				<div class="cr-insert-inner">
+					<label><a tabindex="-1" target="_blank" href="http://php.net/manual/en/function.date.php">Format</a>:</label>
+					<input type="text" class="cr-format">
+				</div>
+				<div class="cr-insert-inner">
+					<label>Default value:</label>
+					<input type="text" class="cr-default">
+				</div>
+			</div>
+			<!-- icon -->
+			<div class="cr-insert" data-target="icon">
+				<div class="cr-insert-inner">
+					<label>Name:</label>
+					<input type="text" class="cr-name">
+				</div>
+				<div class="cr-insert-inner">
+					<label>Default value:</label>
+					<input type="text" class="cr-default">
+				</div>
+			</div>
+			<!-- editor -->
+			<div class="cr-insert" data-target="editor">
+				<div class="cr-insert-inner">
+					<label>Name:</label>
+					<input type="text" class="cr-name">
+				</div>
+				<div class="cr-insert-inner numbers-only">
+					<label>Max lines:</label>
+					<input type="text" class="cr-lines">
+				</div>
+				<div class="cr-insert-inner">
+					<label>More link text:</label>
+					<input type="text" class="cr-more">
+				</div>
+				<div class="cr-insert-inner">
+					<label>No Visual:</label>
+					<input type="checkbox" class="cr-novisual">
+				</div>
+			</div>
+			<!-- conditional -->
+			<div class="cr-insert" data-target="conditional">
+				<div class="cr-insert-inner">
+					If <input type="text" class="cr-field" placeholder="My field name">
+				</div>
+				<div class="cr-insert-inner numbers-only">
+					<select class="operator">
+						<option value="field">exists</option>
+						<option value="nofield">doesn't exist</option>
+						<option value="is">equals</option>
+						<option value="not">doesn't equal</option>
+						<option value="has">contains</option>
+						<option value="hasnot">doesn't contain</option>
+						<option value="more">is more than</option>
+						<option value="less">is less than</option>
+						<option value="emore">is equal or more than</option>
+						<option value="eless">is equal or less than</option>
+					</select>
+				</div>
+				<div class="cr-insert-inner no-double-quotes">
+					<input type="text" class="cr-value" placeholder="this value">
+				</div>
+				<div class="cr-insert-inner">
+					<textarea class="cr-conditional-display" placeholder="Content to display..."></textarea>
+				</div>
+			</div>
+		</div>
+		<div class="cr-insert-code-wrap">
+			<pre><code id="cr-insert"></code></pre>
+			<a href="#" id="cr-insert-button" class="button button-primary">Insert shortcode</a>
+		</div>
+
+	</div>
+</div>
